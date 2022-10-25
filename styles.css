@@ -83,6 +83,13 @@ div.toggle i {
   cursor: pointer;
 }
 
+.box:hover,
+.boxOverview:hover {
+  /* background-color: hsl(228, 12%, 44%); */
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .bxhd {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
