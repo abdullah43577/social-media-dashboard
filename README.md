@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL here](https://your-solution-url.com)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/social-media-dashboard-built-using-css-and-flexbox-igop3Q5vxp)
 - Live Site URL: [live site URL here](https://socialmedia-dashb.netlify.app/)
 
 ## My process
