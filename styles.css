@@ -262,7 +262,7 @@ footer {
 
 /* Javascript code toggle section */
 .background-Color {
-  background-color: hsl(227, 47%, 96%);
+  background-color: #f3f3f3;
 }
 
 .background-Color2 {
@@ -271,6 +271,7 @@ footer {
 
 .changeBoxColors {
   background-color: hsl(227, 47%, 96%);
+  box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 .changeTextColors {
