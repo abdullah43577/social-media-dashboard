@@ -44,37 +44,66 @@ header {
 }
 
 .smd p,
-.toggle p {
+.dark {
   color: hsl(228, 34%, 66%);
   font-size: 12px;
+}
+
+.dark {
+  margin-right: 20px;
+  color: #f3f3f3;
+}
+
+.changer {
+  color: #000;
+  font-weight: bold;
 }
 
 .smd {
   padding-right: 100px;
 }
 
-div.toggle {
+div.toggleMain {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
-div.toggle i {
-  padding-left: 10px;
-  font-size: 30px;
+.border_container {
+  width: 50px;
+  height: 22px;
+  border-radius: 20px;
   background-image: linear-gradient(
     to top right,
     hsl(210, 78%, 56%),
     hsl(146, 68%, 55%)
   );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  background-color: hsl(228, 28%, 20%);
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
   cursor: pointer;
-  transition: background-image 0.5s ease-in 0.3s;
+  transition: ease 1s;
+}
+
+.toggle {
+  padding: 8px;
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 100%;
+  cursor: pointer;
+  transform: translateX(0%);
+  transition: transform 1s;
+}
+
+.toggleContainer__active {
+  background-color: #000;
+}
+
+.toggle__active {
+  transform: translateX(25px);
 }
 
 .box {
-  /* padding: 10px 30px; */
   background-color: hsl(228, 28%, 20%);
   width: 200px;
   padding: 1rem;
@@ -85,7 +114,6 @@ div.toggle i {
 
 .box:hover,
 .boxOverview:hover {
-  /* background-color: hsl(228, 12%, 44%); */
   transition: all 0.5s ease-in-out;
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -307,7 +335,7 @@ footer {
     padding-right: 0px;
   }
 
-  div.toggle {
+  div.toggleMain {
     justify-content: space-between;
     padding: 20px 5px;
   }

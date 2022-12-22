@@ -10,7 +10,6 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -46,10 +45,7 @@ Desktop-first workflow
 - Flexbox
 - CSS Grid
 - Desktop-first workflow
-
-### Useful resources
-
-- [Font Awesome](https://fontawesome.com/) - This helped me with some good libraries for icons, I got the toggle button used in this project from this website, I've been using font awesome for a while now and I'll continue using them always whenever I need icons for my projects.
+- JavaScript
 
 ## Author
 

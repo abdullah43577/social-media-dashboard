@@ -1,5 +1,7 @@
 "use strict";
-const toggle = document.querySelector(".toggle i");
+const toggleContainer = document.querySelector(".border_container");
+const toggle = document.querySelector(".toggle");
+const bgName = document.querySelector(".toggleMain > p");
 const header = document.querySelector("header");
 const body = document.querySelector("body");
 const boxContainer = document.querySelectorAll("div .box");
@@ -8,20 +10,19 @@ const statsh1 = document.querySelectorAll("div.stats h1");
 const secondConth2 = document.querySelector("#second-container h2");
 const boxOverviewContainer = document.querySelectorAll(".boxOverview");
 const boxOverviewh2 = document.querySelectorAll(".boxOverview h2");
-// console.log(document.querySelector(".h2"));
 
-toggle.addEventListener("click", () => {
-  console.log("I'm being clicked");
-  toggle.classList.toggle("fa-toggle-on");
+(toggle, toggleContainer).addEventListener("click", () => {
+  toggleContainer.classList.toggle("toggleContainer__active");
+  toggle.classList.toggle("toggle__active");
 
-  //   document.querySelector("div.toggle p").textContent = "Dark mode";
+  bgName.classList.toggle("changer");
 
   //change background colors of the backgrounds
   header.classList.toggle("background-Color2");
   body.classList.toggle("background-Color");
 
   changeBoxColors(boxContainer);
-  changeTextcolors(statsh1);
+  changeTextColors(statsh1);
 
   socialH2.classList.toggle("socialColor");
 
@@ -29,17 +30,13 @@ toggle.addEventListener("click", () => {
 
   changeBoxColors(boxOverviewContainer);
 
-  changeTextcolors(boxOverviewh2);
+  changeTextColors(boxOverviewh2);
 });
 
-function changeBoxColors(box) {
-  for (let i = 0; i < box.length; i++) {
-    box[i].classList.toggle("changeBoxColors");
-  }
-}
+const changeBoxColors = (boxes) => {
+  boxes.forEach((box) => box.classList.toggle("changeBoxColors"));
+};
 
-function changeTextcolors(text) {
-  for (let i = 0; i < text.length; i++) {
-    text[i].classList.toggle("changeTextColors");
-  }
-}
+const changeTextColors = (texts) => {
+  texts.forEach((text) => text.classList.toggle("changeTextColors"));
+};
